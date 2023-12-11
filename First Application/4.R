@@ -39,7 +39,7 @@ r      <- qnorm(2*pnorm((y-1)/(sigma*y)))
 
 
 par(mar = c(4,5,3,3),las = 0,mgp = c(3.5,0.5,0))
-qqplot(R,r,main="MUHN", plot.it = TRUE, xlab = "", ylab = "",xlim = c(-4,4),ylim=c(-4,4),#abline(0,1),
+qqplot(R,r,main="MUHN", plot.it = TRUE, xlab = "", ylab = "",xlim = c(-4,4),ylim=c(-4,4),
        pch = 19,cex.axis = 1.2,cex.lab = 2,font.axis = 2,cex = 1.6,cex.main=2.5)
 curve(1*x,add = TRUE,col="black",lwd = 2)
 mtext(text = "Theoretical Quantiles", side = 1, line = 2, cex = 2)
@@ -72,7 +72,7 @@ R      <- qnorm(pbeta(Y,shape1=5.942,shape2=21.206))
 r      <- qnorm(pbeta(y,shape1=5.942,shape2=21.206))
 
 par(mar = c(4,5,3,3),las = 0,mgp = c(3.5,0.5,0))
-qqplot(R,r,main="Beta", plot.it = TRUE, xlab = "", ylab = "",xlim = c(-4,4),ylim=c(-4,4),#abline(0,1),
+qqplot(R,r,main="Beta", plot.it = TRUE, xlab = "", ylab = "",xlim = c(-4,4),ylim=c(-4,4),
        pch = 19,cex.axis = 1.2,cex.lab = 2,font.axis = 2,cex = 1.6,cex.main=2.5)
 curve(1*x,add = TRUE,col="black",lwd = 2)
 mtext(text = "Theoretical Quantiles", side = 1, line = 2, cex = 2)
@@ -103,7 +103,7 @@ R      <- qnorm(pkumar(Y,2.719,44.661))
 r      <- qnorm(pkumar(y,2.719,44.661))
 
 par(mar = c(4,5,3,3),las = 0,mgp = c(3.5,0.5,0))
-qqplot(R,r,main = "KM", plot.it = TRUE, xlab = "", ylab = "",xlim = c(-4,4),ylim=c(-4,4),#abline(0,1),
+qqplot(R,r,main = "KM", plot.it = TRUE, xlab = "", ylab = "",xlim = c(-4,4),ylim=c(-4,4),
        pch = 19,cex.axis = 1.2,cex.lab = 2,font.axis = 2,cex = 1.6,cex.main=2.5)
 curve(1*x,add = TRUE,col="black",lwd = 2)
 mtext(text = "Theoretical Quantiles", side = 1, line = 2, cex = 2)
@@ -139,7 +139,7 @@ r      <- qnorm(2*pnorm(y/(sigma*(1-y)))-1)
 
 
 par(mar = c(4,5,3,3),las = 0,mgp = c(3.5,0.5,0))
-qqplot(R,r,main="UHN", plot.it = TRUE, xlab = "", ylab = "",xlim = c(-4,4),ylim=c(-4,4),#abline(0,1),
+qqplot(R,r,main="UHN", plot.it = TRUE, xlab = "", ylab = "",xlim = c(-4,4),ylim=c(-4,4),
        pch = 19,cex.axis = 1.2,cex.lab = 2,font.axis = 2,cex = 1.6,cex.main=2.5)
 curve(1*x,add = TRUE,col="black",lwd = 2)
 mtext(text = "Theoretical Quantiles", side = 1, line = 2, cex = 2)
@@ -173,10 +173,10 @@ sigma  <- 4.049
 Y      <- sim(n,sigma)
 
 R      <- qnorm(1-(1-((sigma*Y)/(1+sigma)*(Y-1)))*exp(-(sigma*Y)/(1-Y))) 
-r      <- qnorm(1-(1-((sigma*y)/(1+sigma)*(y-1)))*exp(-(sigma*y)/(1-y))) #y
+r      <- qnorm(1-(1-((sigma*y)/(1+sigma)*(y-1)))*exp(-(sigma*y)/(1-y))) 
 
 par(mar = c(4,5,3,3),las = 0,mgp = c(3.5,0.5,0))
-qqplot(R,r,main="UL", plot.it = TRUE, xlab = "", ylab = "",xlim = c(-4,4),ylim=c(-4,4),#abline(0,1),
+qqplot(R,r,main="UL", plot.it = TRUE, xlab = "", ylab = "",xlim = c(-4,4),ylim=c(-4,4),
        pch = 19,cex.axis = 1.2,cex.lab = 2,font.axis = 2,cex = 1.6,cex.main=2.5)
 curve(1*x,add = TRUE,col="black",lwd = 2)
 mtext(text = "Theoretical Quantiles", side = 1, line = 2, cex = 2)

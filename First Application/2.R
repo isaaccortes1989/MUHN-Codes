@@ -48,6 +48,8 @@ f4   <- dbeta(x,shape1 = 5.942,shape2 = 21.206)
 #==============#
 f5   <- dkumar(x,2.719,44.661)
 
+
+
 par(mar = c(4,5,3,3),las = 0,mgp = c(3.5,0.5,0))
 hist(y,breaks=5,main = "",col = "white",freq = F, xlim = c(0,0.6), ylim = c(0,5), xlab = "",ylab = "",cex.axis = 1.2,cex.lab = 2,font.axis = 2,cex = 1.6)
 box()
